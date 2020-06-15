@@ -15,11 +15,11 @@ The original version treated all characters as chars; this updated version allow
        e.printStackTrace();
        }
 
-All credits to the original author Joos Kiener.
+The version available on maven is outdated and does not contain the update.
 
-The original readme below:
+All credits to the original author Joos Kiener. The original readme is below.
 
-#IO
+# IO
 
 Classe(s) for improving IO in Java. Currently there is only 1 class in this library.
 OptimizedRandomAccessFile
