@@ -2,7 +2,7 @@
 
 Java's `RandomAccessFile` is slow, as there is no buffering. However it allows both random access to data and line-by-line reading via `readLine()`, and thus is quite handy if you want to operate on large files (binary or text). 
 
-This is a drop-in replacement for Java's RandomAccessFile that adds buffering, originally available @ https://bitbucket.org/kienerj/io/src/default/ 
+This is a drop-in replacement for Java's RandomAccessFile that adds buffering, originally available [here](https://bitbucket.org/kienerj/io/src/default/)
 
 The original version treated all characters as chars; this updated version allows to handle any kind of text encoding. Consider for example 
 
