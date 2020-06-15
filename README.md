@@ -4,15 +4,15 @@ Java's `RandomAccessFile` is slow, as there is no buffering. However it allows b
 
 This is a drop-in replacement for Java's RandomAccessFile that adds buffering, originally available [here](https://bitbucket.org/kienerj/io/src/default/)
 
-The original version treated all characters as chars; this updated version allows to handle any kind of text encoding. Consider for example 
+The original version treated all characters as chars; this updated version allows to handle any kind of text encoding. For example this is how to read a UTF-8 encoded line via `readLine()`:
 
        try {
-       OptimizedRandomAccessFile raf = new OptimizedRandomAccessFile(filename, "r");
-       String line = raf.readLine();
-       String utf8 = new String(line.getBytes("ISO-8859-1"), "UTF-8");
-       System.out.println(utf8);
+           OptimizedRandomAccessFile raf = new OptimizedRandomAccessFile(filename, "r");
+           String line = raf.readLine();
+           String utf8 = new String(line.getBytes("ISO-8859-1"), "UTF-8");
+           System.out.println(utf8);
        } catch (IOException e) {
-       e.printStackTrace();
+           e.printStackTrace();
        }
 
 The version available on maven is outdated and does not contain the update.
