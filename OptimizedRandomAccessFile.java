@@ -2,6 +2,7 @@
  * The MIT License
  *
  * Copyright 2013 Joos Kiener <Joos.Kiener@gmail.com>.
+ * Copyright 2020 Dominik Klein
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -21,8 +22,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-//package org.bitbucket.kienerj.io;
-package org.asdfjkl.jerryfx.lib;
+package org.bitbucket.kienerj.io;
 
 import java.io.File;
 import java.io.FileDescriptor;
